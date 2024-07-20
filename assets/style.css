@@ -1,0 +1,119 @@
+:root {
+    --primarycol: #785964;
+    --secondarycol: #461627;
+    --tertiarycol: #e3c5cf;
+
+}
+
+body{
+background-color: var(--primarycol);
+margin: 20px 20px;
+
+
+}
+header{
+    border: thick double var(--secondarycol) ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px 20px;
+    line-height: 1.5;
+    background-color: var();
+
+}
+
+header h1{
+    font-size: 200%;
+    color: var(--secondarycol);
+}
+header p{
+    font-size: 120%;
+    color: var(--tertiarycol);
+    margin-bottom: 10px;
+
+}
+
+.cardscontainer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cardcontent {
+box-sizing: border-box;
+border: dashed var(--secondarycol);
+margin: 50px;
+width: 500px ;
+height: 330px ;
+display: flex;
+flex-direction: column;
+padding-top: 10px;
+padding-bottom: 10px;
+align-items: center;
+word-wrap: break-word; /* Allows long words to break and wrap */
+}
+
+.cardheader {
+    position: relative;
+    margin-top: -28px;
+    border: thick double var(--secondarycol);
+    background-color: var(--tertiarycol);
+    font-size: 150%;    
+    font-weight: bold;
+    color: var(--secondarycol);
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+   
+}
+.cardcontent p{
+    font-size: 100%;
+    color: var(--tertiarycol);
+    margin: 10px 10px;
+    line-height: 1.5;
+    
+}
+
+.cardcontent pre {
+    font-size: 80%;
+    background-color: var(--tertiarycol);
+    background: linear-gradient(#33111d, #e3c5cf, #7b6b6f);
+    color: var(--secondarycol);
+    border-radius: 5px;
+    user-select: all;
+    width: 280px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.cardcontent:hover{
+    box-shadow: inset 0px 0px 8px var(--primarycol), 0 0 15px var(--tertiarycol);
+}
+footer{
+    font-size: 120%;
+    color: var(--secondarycol);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  
+}
+@media screen and (max-width=738px) {
+    header p{
+        text-align: justify;
+    }
+}
+    
+@media screen and (max-width=428px){
+    .cardcontent {
+        flex: 400px;
+    }
+    
+}

@@ -59,4 +59,5 @@ The completed application should meet the following criteria:
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
 # CSS-Mini-Project Link
+https://souad-hb.github.io/csssnippet/
 
